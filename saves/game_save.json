@@ -1,10 +1,10 @@
 {
   "player": {
-    "name": "123",
+    "name": "1",
     "level": 1,
     "exp": 0,
     "exp_to_next": 100,
-    "health": 92,
+    "health": 100,
     "max_health": 100,
     "attack": 10,
     "defense": 5,
@@ -58,7 +58,7 @@
         "completed": false
       }
     ],
-    "current_location": "forest",
+    "current_location": "village",
     "current_story_node": "continue_adventure",
     "story_flags": {},
     "total_gold_earned": 0,
