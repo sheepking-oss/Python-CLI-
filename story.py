@@ -167,8 +167,10 @@ def free_explore_mode(player):
             print_stats(player)
         
         elif choice == '5':
-            from save_system import save_game
-            save_game(player)
+            from save_system import save_game_with_menu
+            result = save_game_with_menu(player)
+            if result == 'main_menu':
+                return 'main_menu'
         
         elif choice == str(len(connected) + 6) and location.get('has_shop'):
             open_shop(player)

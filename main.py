@@ -77,6 +77,8 @@ def continue_game(player):
             result = free_explore_mode(player)
             if result == 'game_over':
                 return
+            elif result == 'main_menu':
+                return
         
         elif choice == '3':
             show_inventory(player)
@@ -88,7 +90,10 @@ def continue_game(player):
             print_stats(player)
         
         elif choice == '6':
-            save_game(player)
+            from save_system import save_game_with_menu
+            result = save_game_with_menu(player)
+            if result == 'main_menu':
+                return
         
         else:
             print_color("  无效的选择！", 'red')
