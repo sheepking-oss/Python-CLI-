@@ -1,0 +1,71 @@
+{
+  "player": {
+    "name": "123",
+    "level": 1,
+    "exp": 0,
+    "exp_to_next": 100,
+    "health": 92,
+    "max_health": 100,
+    "attack": 10,
+    "defense": 5,
+    "gold": 50,
+    "inventory": {},
+    "quests": [
+      {
+        "id": "kill_slimes",
+        "name": "消灭史莱姆",
+        "description": "消灭 5 只史莱姆",
+        "type": "kill",
+        "target": "slime",
+        "target_count": 5,
+        "progress": 0,
+        "gold_reward": 50,
+        "exp_reward": 30,
+        "completed": false
+      },
+      {
+        "id": "kill_goblins",
+        "name": "哥布林猎手",
+        "description": "消灭 3 只哥布林",
+        "type": "kill",
+        "target": "goblin",
+        "target_count": 3,
+        "progress": 0,
+        "gold_reward": 80,
+        "exp_reward": 50,
+        "completed": false
+      },
+      {
+        "id": "collect_gold",
+        "name": "财富积累",
+        "description": "累计获得 200 金币",
+        "type": "gold",
+        "target": 200,
+        "progress": 0,
+        "gold_reward": 100,
+        "exp_reward": 60,
+        "completed": false
+      },
+      {
+        "id": "reach_level_5",
+        "name": "成长之路",
+        "description": "达到 5 级",
+        "type": "level",
+        "target": 5,
+        "progress": 0,
+        "gold_reward": 150,
+        "exp_reward": 100,
+        "completed": false
+      }
+    ],
+    "current_location": "forest",
+    "current_story_node": "continue_adventure",
+    "story_flags": {},
+    "total_gold_earned": 0,
+    "monsters_killed": {},
+    "has_artifact": false,
+    "defeated_dragon": false,
+    "accepted_main_quest": false
+  },
+  "version": "1.0"
+}
